@@ -6,27 +6,34 @@
     <title>Rhythm Rise Entertainment | Official</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background-color: #000; color: #fff; font-family: sans-serif; line-height: 1.6; }
+        body { background-color: #050505; color: #fff; font-family: 'Segoe UI', sans-serif; line-height: 1.6; }
         
-        /* Header & Logo */
-        header { padding: 30px; text-align: center; background: #000; border-bottom: 2px solid #f39c12; }
-        .logo-img { width: 120px; height: auto; margin-bottom: 10px; border-radius: 10px; }
-        .brand-name { font-size: 24px; font-weight: bold; letter-spacing: 3px; color: #f39c12; }
+        header { padding: 40px 20px; text-align: center; background: #000; border-bottom: 2px solid #f39c12; }
+        .logo-img { width: 100px; height: auto; margin-bottom: 15px; }
+        .brand-name { font-size: 26px; font-weight: 900; letter-spacing: 5px; color: #f39c12; }
 
-        .container { padding: 40px 10%; }
-        .section-title { font-size: 22px; color: #f39c12; margin-bottom: 20px; text-transform: uppercase; border-left: 5px solid #f39c12; padding-left: 15px; }
+        .container { padding: 50px 8%; }
+        .section-title { font-size: 24px; color: #f39c12; margin-bottom: 30px; text-transform: uppercase; border-left: 5px solid #f39c12; padding-left: 15px; letter-spacing: 2px; }
         
-        /* Text Styles */
-        .intro-text { font-size: 18px; color: #ccc; margin-bottom: 40px; }
-        .ceo-box { background: #111; padding: 25px; border-radius: 10px; border: 1px solid #333; }
-        .ceo-name { font-size: 20px; color: #fff; margin-bottom: 5px; }
-        .ceo-title { color: #f39c12; font-style: italic; margin-bottom: 15px; display: block; }
+        /* Video Section */
+        .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background: #000; border-radius: 15px; margin-bottom: 50px; border: 1px solid #333; }
+        .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
-        /* Artists Grid */
-        .artist-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px; }
-        .artist-card { background: #1a1a1a; padding: 20px; text-align: center; border-radius: 8px; }
+        /* Artists Section */
+        .artist-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-bottom: 60px; }
+        .artist-card { background: #111; border-radius: 15px; overflow: hidden; border: 1px solid #222; transition: 0.3s; }
+        .artist-card:hover { border-color: #f39c12; transform: translateY(-5px); }
+        .artist-img { width: 100%; height: 350px; object-fit: cover; }
+        .artist-info { padding: 20px; text-align: center; }
+        .artist-info h3 { font-size: 1.3rem; margin-bottom: 5px; }
+        .artist-info p { color: #f39c12; font-size: 0.8rem; text-transform: uppercase; }
 
-        footer { text-align: center; padding: 40px; color: #444; font-size: 12px; }
+        /* CEO Section */
+        .ceo-box { background: linear-gradient(145deg, #111, #000); padding: 40px; border-radius: 15px; border: 1px solid #333; }
+        .ceo-name { font-size: 22px; color: #fff; margin-bottom: 5px; }
+        .ceo-title { color: #f39c12; font-style: italic; margin-bottom: 20px; display: block; font-size: 0.9rem; }
+
+        footer { text-align: center; padding: 50px; color: #444; font-size: 0.8rem; border-top: 1px solid #111; margin-top: 40px; }
     </style>
 </head>
 <body>
@@ -38,31 +45,48 @@
 
     <div class="container">
         
-        <h2 class="section-title">Who We Are</h2>
-        <p class="intro-text">
-            **Rhythm Rise Entertainment** ဆိုသည်မှာ မြန်မာ့ဂီတလောကတွင် ကိုယ်ပိုင်ဟန်ဖြင့် ရပ်တည်လိုသော Independent အနုပညာရှင်များအတွက် အဓိကကျသော Platform တစ်ခုဖြစ်ပါသည်။ ကျွန်ုပ်တို့သည် အရည်အချင်းရှိသော လူငယ်တေးသံရှင်များကို ကမ္ဘာ့အဆင့်မီ Digital Platforms များပေါ်သို့ တွန်းတင်ပေးနေသည့်အပြင်၊ အရည်အသွေးမြင့် Music Video ထုတ်လုပ်ရေးနှင့် Branding ပိုင်းကိုပါ အထူးပြုဆောင်ရွက်နေသော Record Label တစ်ခုဖြစ်ပါသည်။
-        </p>
-
-        <h2 class="section-title">Current Artists</h2>
-        <div class="artist-grid">
-            <div class="artist-card">
-                <h3 style="color:#fff">Nyeimn Chamn Co.</h3>
-                <p style="color:#888; font-size: 14px;">Artist</p>
-            </div>
-            <div class="artist-card">
-                <h3 style="color:#fff">Ei Myat Cho</h3>
-                <p style="color:#888; font-size: 14px;">Artist</p>
-            </div>
+        <h2 class="section-title">Latest Release</h2>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/jZ_vVq6N9o4" title="Kyay Latt Sate Kuu" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
 
-        <h2 class="section-title" style="margin-top: 40px;">Meet Our CEO</h2>
-        <div class="ceo-box">
-            <h3 class="ceo-name">Kub (Founder & CEO)</h3>
-            <span class="ceo-title">Music Producer | Director | Audio Engineer</span>
-            <p style="color:#bbb;">
-                Rhythm Rise ၏ တည်ထောင်သူ **Kub** သည် အနုပညာရှင်များ၏ ဖန်တီးမှုကို နည်းပညာနှင့် ပေါင်းစပ်ပေးကာ မြန်မာ့ဂီတကို နိုင်ငံတကာအဆင့်မီစေရန် ဦးဆောင်နေသူ ဖြစ်ပါသည်။ "Kyay Latt Sate Kuu" (1M+ Views) ကဲ့သို့သော အောင်မြင်သည့် လက်ရာများကို ကိုယ်တိုင် ဖန်တီးခဲ့သူ ဖြစ်ပါသည်။
+        <section>
+            <h2 class="section-title">Who We Are</h2>
+            <p style="color: #ccc; margin-bottom: 50px;">
+                Rhythm Rise Entertainment ဆိုသည်မှာ မြန်မာ့ဂီတလောကတွင် ကိုယ်ပိုင်ဟန်ဖြင့် ရပ်တည်လိုသော Independent အနုပညာရှင်များအတွက် အဓိကကျသော Platform တစ်ခုဖြစ်ပါသည်။ အရည်အသွေးမြင့် Music Video ထုတ်လုပ်ရေးနှင့် Branding ပိုင်းကိုပါ အထူးပြုဆောင်ရွက်နေသော Record Label တစ်ခုဖြစ်ပါသည်။
             </p>
-        </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Our Artists</h2>
+            <div class="artist-grid">
+                <div class="artist-card">
+                    <img src="https://raw.githubusercontent.com/rhythmrisecompany1-ux/Rhythmrise.ent/main/1000002119.jpg" alt="Nyeimn Chamn Co." class="artist-img">
+                    <div class="artist-info">
+                        <h3>Nyeimn Chamn Co.</h3>
+                        <p>Independent Artist</p>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <img src="https://raw.githubusercontent.com/rhythmrisecompany1-ux/Rhythmrise.ent/main/1000002120.jpg" alt="Ei Myat Cho" class="artist-img">
+                    <div class="artist-info">
+                        <h3>Ei Myat Cho</h3>
+                        <p>Independent Artist</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">Leadership</h2>
+            <div class="ceo-box">
+                <h3 class="ceo-name">Kub (Founder & CEO)</h3>
+                <span class="ceo-title">Music Producer | Director | Audio Engineer</span>
+                <p style="color:#bbb;">
+                    Rhythm Rise ၏ တည်ထောင်သူ Kub သည် အနုပညာရှင်များ၏ ဖန်တီးမှုကို နည်းပညာနှင့် ပေါင်းစပ်ပေးကာ မြန်မာ့ဂီတကို နိုင်ငံတကာအဆင့်မီစေရန် ဦးဆောင်နေသူ ဖြစ်ပါသည်။ "Kyay Latt Sate Kuu" ကဲ့သို့သော အောင်မြင်သည့် လက်ရာများကို ကိုယ်တိုင် ဖန်တီးခဲ့သူ ဖြစ်ပါသည်။
+                </p>
+            </div>
+        </section>
 
     </div>
 
