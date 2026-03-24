@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhythm Rise Entertainment</title>
+    <style>
+        body { background-color: #000; color: #fff; font-family: 'Helvetica', sans-serif; text-align: center; margin: 0; padding: 0; }
+        .hero { padding: 150px 20px; }
+        h1 { font-size: 3.5em; font-weight: bold; letter-spacing: 5px; margin-bottom: 10px; }
+        p { font-size: 1.2em; color: #888; text-transform: uppercase; letter-spacing: 2px; }
+        .coming-soon { color: #f39c12; font-weight: bold; margin-top: 20px; }
+        .footer { padding: 40px; font-size: 0.8em; color: #444; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>RHYTHM RISE</h1>
+        <p>Independent Record Label</p>
+        <p class="coming-soon">Official Website Coming Soon</p>
+    </div>
+    <div class="footer">
+        &copy; 2026 Rhythm Rise Entertainment. Produced by Kub.
+    </div>
+</body>
+</html>
